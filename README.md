@@ -28,3 +28,6 @@ You must set your api key and secret key before calling the service.
     NSLog(@"%@", error.localizedDescription);
 }];
 ```
+
+##Todo
+1. Add cocoa pods support.
