@@ -4,7 +4,7 @@ PhaxiOS
 A simple Objective-C library for Phaxio
 
 ##Requirements
-[AFNetworking](https://github.com/AFNetworking/AFNetworking)
+[AFNetworking](https://github.com/AFNetworking/AFNetworking) (Automatic when using cocoapods)
 
 ##Usage
 You must set your api key and secret key before calling the service.
@@ -28,6 +28,3 @@ You must set your api key and secret key before calling the service.
     NSLog(@"%@", error.localizedDescription);
 }];
 ```
-
-##Todo
-1. Add cocoa pods support.
