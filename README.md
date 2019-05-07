@@ -3,15 +3,15 @@ PhaxiOS
 
 A simple Objective-C library for Phaxio
 
-##Requirements
+## Requirements
 [AFNetworking](https://github.com/AFNetworking/AFNetworking) (Automatic when using cocoapods)
 
-##Usage
+## Usage
 You must set your api key and secret key before calling the service.
 ```obj-c
 [PhaxioManager setPMAPIKey:API_KEY andPMAPISecret:API_SECRET];
 ```
-###Send
+### Send
 ```obj-c
 [[PhaxioManager sharedInstance] send:fileData ofType:@"pdf" toNumber:@"5555555555" withOptions:params completion:^(id responseObject) {
     //Do something with the response
@@ -20,7 +20,7 @@ You must set your api key and secret key before calling the service.
 }];
 ```
 
-###Fax Status
+### Fax Status
 ```obj-c
 [[PhaxioManager sharedInstance] faxStatusForId:@"18826331" completion:^(id responseObject) {
     NSLog(@"%@", responseObject);
